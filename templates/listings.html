@@ -7,7 +7,7 @@
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- ....................Custom CSS Link...................... -->
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="../css/style.css" />
     <!-- ....................Fontawesome Link...................... -->
     <link
       rel="stylesheet"
@@ -38,11 +38,11 @@
             <div class="header-left">
                 <h1>Here is our Cars</h1>
                 <br>
-                {% for car in cars %}
+                {% comment %} {% for car in cars %}
                 <ul>
                     <li><a href='car/{{ car.id }}'>{{ car }}</a></li><br>
                 </ul>
-                {% endfor %}
+                {% endfor %} {% endcomment %}
                 <br>
                 <a href="create/" class="btn">Add new listing</a>
             </div>
